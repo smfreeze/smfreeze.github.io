@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Module</title>
+    <link rel="stylesheet" href="../css/guides.css">
+ </script>
+</head>
+<body>
+    <button id="mainBtn">Main Page</button>
+    <button id="helpBtn">Help Page</button>
+    <button id="modulesBtn">Modules Page</button>
+    <div class="help-body">
+        <h1>Notes (Notes) Module</h1>
+        <h3><a href="modules.html">Other</a></h3>
+        This is a unique type of module in that it is purely organisational, it allows users to type and save text in a module format, such that it can be displayed in the work area of the modular synthesiser. It takes no input or output connections but is essential to allow users to annotate their workspace operations.
+        <br><br>
+        This module takes 0 inputs and produces 0 output:
+
+    </div>
+</body>
+
+<script>
+    document.getElementById('helpBtn').addEventListener('click', () => {
+        window.location.href = '../help.html';
+    });
+    document.getElementById('mainBtn').addEventListener('click', () => {
+        window.location.href = '../index.html';
+    });
+    document.getElementById('modulesBtn').addEventListener('click', () => {
+        window.location.href = 'modules.html';
+    });
+</script>
+</html>

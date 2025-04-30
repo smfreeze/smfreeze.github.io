@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Module</title>
+    <link rel="stylesheet" href="../css/guides.css">
+ </script>
+</head>
+<body>
+    <button id="mainBtn">Main Page</button>
+    <button id="helpBtn">Help Page</button>
+    <button id="modulesBtn">Modules Page</button>
+    <div class="help-body">
+        <h1>Audio Output (Out) Module</h1>
+        <h3><a href="modules.html">Output</a></h3>
+        The output module is a critical module for a virtual modular synthesiser, as it is the endpoint, or final modular, for any synth configuration/module chain. The output module takes the processed audio signal from the other modules and outputs the actual sound through the speakers of the device the user is running the virtual modular synthesiser from.        <br><br>
+        There is a maximum of 1 audio output node per project.<br><br>
+        
+        
+        This module takes 1 inputs and produces 0 output:
+        <br>
+        <b>Input 1 </b> is the audio signal that you wish to output to your speakers.
+
+    </div>
+</body>
+
+<script>
+    document.getElementById('helpBtn').addEventListener('click', () => {
+        window.location.href = '../help.html';
+    });
+    document.getElementById('mainBtn').addEventListener('click', () => {
+        window.location.href = '../index.html';
+    });
+    document.getElementById('modulesBtn').addEventListener('click', () => {
+        window.location.href = 'modules.html';
+    });
+</script>
+</html>

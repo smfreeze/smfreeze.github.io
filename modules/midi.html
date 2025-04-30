@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDI Module</title>
+    <link rel="stylesheet" href="../css/guides.css">
+ </script>
+</head>
+<body>
+    <button id="mainBtn">Main Page</button>
+    <button id="helpBtn">Help Page</button>
+    <button id="modulesBtn">Modules Page</button>
+    <div class="help-body">
+        <h1>MIDI (MIDI) Module</h1>
+        <h3><a href="modules.html">Input</a></h3>
+        The MIDI module is a special type of input module that takes a signal from a MIDI controller device (such as electronic piano/keyboard shown below, or pads etc) and converts it to a frequency/constant that can be used by other modules, like oscillators. To learn more about midi devices, click <u><a href="https://en.wikipedia.org/wiki/MIDI_controller">here</a></u>.
+        <br>
+        For example, if you press a c note on a MIDI keyboard, the MIDI module takes this signal and converts it to a frequency of 261.63Hz which can then be used by an oscillator (like sine) to produce sound of this frequency.
+        <br><br>
+        There is a maximum of 1 MIDI input node per project.<br><br>
+        <img src="../data/midi.png" width="50%" height="50%">
+        <br><br>
+        This module takes 0 inputs and produces 1 output:
+        <br>
+        <b>Output</b> is the constant (frequency) channel output of the given key/note pressed by the MIDI supported device.
+        <br>
+
+    </div>
+</body>
+
+<script>
+    document.getElementById('helpBtn').addEventListener('click', () => {
+        window.location.href = '../help.html';
+    });
+    document.getElementById('mainBtn').addEventListener('click', () => {
+        window.location.href = '../index.html';
+    });
+    document.getElementById('modulesBtn').addEventListener('click', () => {
+        window.location.href = 'modules.html';
+    });
+</script>
+</html>
