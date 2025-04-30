@@ -1,0 +1,79 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1vh 2vw;
+    height: 3.2vh;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.top-bar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: clamp(1em, 1vw, 1.5em);
+    cursor: pointer;
+    padding: 0.5vh 8.7%;
+}
+
+.top-bar button:hover {
+    background-color: gray;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    position: relative;
+    background-color: rgb(251, 0, 0);
+    height: calc(100vh - 3.2vh);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar {
+    width: 22vw;
+    background-color: #444;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 3vh;
+    height: calc(100vh - 3vh);
+    padding: 2vw 1vw;
+    box-sizing: border-box;
+    transform: translateX(-92%);
+    transition: transform 0.5s;
+    z-index: 2;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #444;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1em, 1vw, 2em);
+    color: white;
+}
+
+.sidebar.expanded {
+    transform: translateX(0);
+}

@@ -1,0 +1,248 @@
+{
+  "modules": [
+    {
+      "nodeId": "midi-node-0",
+      "moduleId": "Midi",
+      "position": {
+        "left": "250.969px",
+        "top": "719.325px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "saw-node-3",
+      "moduleId": "Saw",
+      "position": {
+        "left": "948px",
+        "top": "849.35px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "saw-node-4",
+      "moduleId": "Saw",
+      "position": {
+        "left": "1068.98px",
+        "top": "887.35px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "mul-node-5",
+      "moduleId": "Mul",
+      "position": {
+        "left": "947.987px",
+        "top": "894.35px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "const-node-6",
+      "moduleId": "Const",
+      "position": {
+        "left": "640.969px",
+        "top": "671.95px"
+      },
+      "contents": "3"
+    },
+    {
+      "nodeId": "add-node-7",
+      "moduleId": "Add",
+      "position": {
+        "left": "1247.97px",
+        "top": "827.362px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "mul-node-8",
+      "moduleId": "Mul",
+      "position": {
+        "left": "1535px",
+        "top": "523.35px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "out-node-9",
+      "moduleId": "Out",
+      "position": {
+        "left": "1957.98px",
+        "top": "374.369px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "const-node-10",
+      "moduleId": "Const",
+      "position": {
+        "left": "757.969px",
+        "top": "674.337px"
+      },
+      "contents": "2"
+    },
+    {
+      "nodeId": "mul-node-11",
+      "moduleId": "Mul",
+      "position": {
+        "left": "949.981px",
+        "top": "942.356px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "saw-node-12",
+      "moduleId": "Saw",
+      "position": {
+        "left": "1068.99px",
+        "top": "945.362px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "tri-node-14",
+      "moduleId": "Tri",
+      "position": {
+        "left": "784.987px",
+        "top": "459.356px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "const-node-15",
+      "moduleId": "Const",
+      "position": {
+        "left": "515px",
+        "top": "457.375px"
+      },
+      "contents": "4"
+    },
+    {
+      "nodeId": "sub-node-0",
+      "moduleId": "Sub",
+      "position": {
+        "left": "1414.97px",
+        "top": "645.362px"
+      },
+      "contents": ""
+    },
+    {
+      "nodeId": "notes-node-1",
+      "moduleId": "Not",
+      "position": {
+        "left": "997.969px",
+        "top": "133.312px"
+      },
+      "contents": "Demonstrates a complex structure that could be used in a song"
+    },
+    {
+      "nodeId": "notes-node-2",
+      "moduleId": "Not",
+      "position": {
+        "left": "1530.99px",
+        "top": "644.562px"
+      },
+      "contents": "Subtract module used here to attenuate the sounds"
+    },
+    {
+      "nodeId": "notes-node-3",
+      "moduleId": "Not",
+      "position": {
+        "left": "545.962px",
+        "top": "340.331px"
+      },
+      "contents": "Low frequency oscillator to add dynamics"
+    },
+    {
+      "nodeId": "notes-node-5",
+      "moduleId": "Not",
+      "position": {
+        "left": "268.969px",
+        "top": "595.337px"
+      },
+      "contents": "Main sound attrbutes defined down here"
+    }
+  ],
+  "connections": [
+    [
+      "midi-node-0-output-0",
+      [
+        "saw-node-3-input-0",
+        "mul-node-5-input-0",
+        "mul-node-11-input-0"
+      ]
+    ],
+    [
+      "mul-node-5-output-0",
+      [
+        "saw-node-4-input-0"
+      ]
+    ],
+    [
+      "const-node-6-output-0",
+      [
+        "mul-node-5-input-1"
+      ]
+    ],
+    [
+      "saw-node-3-output-0",
+      [
+        "add-node-7-input-0"
+      ]
+    ],
+    [
+      "saw-node-4-output-0",
+      [
+        "add-node-7-input-1"
+      ]
+    ],
+    [
+      "const-node-10-output-0",
+      [
+        "mul-node-11-input-1"
+      ]
+    ],
+    [
+      "mul-node-11-output-0",
+      [
+        "saw-node-12-input-0"
+      ]
+    ],
+    [
+      "mul-node-8-output-0",
+      [
+        "out-node-9-input-0"
+      ]
+    ],
+    [
+      "tri-node-14-output-0",
+      [
+        "mul-node-8-input-0"
+      ]
+    ],
+    [
+      "const-node-15-output-0",
+      [
+        "tri-node-14-input-0"
+      ]
+    ],
+    [
+      "saw-node-12-output-0",
+      [
+        "sub-node-0-input-1"
+      ]
+    ],
+    [
+      "add-node-7-output-0",
+      [
+        "sub-node-0-input-0"
+      ]
+    ],
+    [
+      "sub-node-0-output-0",
+      [
+        "mul-node-8-input-1"
+      ]
+    ]
+  ]
+}
